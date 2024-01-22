@@ -1,0 +1,117 @@
+﻿<Window
+    x:Class="WpfApp7.View.EditWorkerView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfApp7.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="AddWorkersView"
+    WindowStartupLocation="CenterScreen"
+    Width="400"
+    Height="450"
+    mc:Ignorable="d">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock
+            Grid.Row="0"
+            Width="175"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Background="Yellow"
+            FontSize="30"
+            FontStyle="Oblique"
+            FontWeight="DemiBold"
+            Text="Edit Worker" />
+        <StackPanel
+            HorizontalAlignment="Center"
+            Orientation="Horizontal" Margin="0,69,0,0" Grid.RowSpan="2">
+            <TextBlock
+                Width="30"
+                Height="25"
+                Margin="10,0,0,0"
+                FontSize="20"
+                Text="Id:" />
+            <TextBox x:Name="txbIdInput"
+                Width="173"
+                Height="25"
+                VerticalContentAlignment="Center"
+                Text="" />
+
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="2"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBox x:Name="txbFirstNameInput"
+                Width="168"
+                Height="25"
+                VerticalContentAlignment="Center"
+                Text="" />
+
+        </StackPanel>
+        <StackPanel
+            Grid.Row="3"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBox x:Name="txbLastNameInput"
+                Width="170"
+                Height="25"
+                VerticalContentAlignment="Center"
+                Text="" />
+
+        </StackPanel>
+        <StackPanel
+            Grid.Row="4"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+            <TextBox x:Name="txbAgeInput"
+                Width="168"
+                Height="25"
+                VerticalContentAlignment="Center"
+                Text="" />
+
+        </StackPanel>
+        <TextBlock
+            Grid.Row="4"
+            Width="42"
+            Margin="8,18,0,21"
+            HorizontalAlignment="Left"
+            FontSize="20"
+            Text="Age:" />
+        <TextBlock
+            Grid.Row="3"
+            Width="92"
+            Margin="8,18,0,21"
+            HorizontalAlignment="Left"
+            FontSize="20"
+            Text="LastName:" />
+        <TextBlock
+            Grid.Row="2"
+            Height="25"
+            Margin="9,21,273,23"
+            FontSize="20"
+            Text="FirstName:" />
+
+        <StackPanel
+            Grid.Row="5"
+            VerticalAlignment="Center"
+            Orientation="Vertical">
+            <Button Click="btnSave_Click"
+                Width="80"
+                Height="40"
+                Background="LightSeaGreen"
+                BorderThickness="5"
+                Content="Save" />
+        </StackPanel>
+
+
+    </Grid>
+</Window>
